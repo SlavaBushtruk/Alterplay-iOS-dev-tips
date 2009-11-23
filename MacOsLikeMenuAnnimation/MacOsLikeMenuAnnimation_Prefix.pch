@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'MacOsLikeMenuAnnimation' target in the 'MacOsLikeMenuAnnimation' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
