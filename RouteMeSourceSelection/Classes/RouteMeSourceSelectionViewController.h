@@ -6,19 +6,29 @@
 //  Copyright Slava Bushtruk 2009. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "UIKit/UIKit.h"
 #import "RMMapView.h"
+#import "CoreLocation/CoreLocation.h"
 
 @interface RouteMeSourceSelectionViewController : UIViewController
 <RMMapViewDelegate,
-UIPickerViewDelegate, UIPickerViewDataSource>
+UIPickerViewDelegate, UIPickerViewDataSource,
+CLLocationManagerDelegate>
 {
 	IBOutlet RMMapView *mapView;
 	IBOutlet UIPickerView *mapSourcePicker;
 	IBOutlet UIBarButtonItem *mapSettingsBarButton;
+	IBOutlet UIBarButtonItem *findmeBarButton;
+	
+	CLLocationManager* locationManager;
 }
 
 - (IBAction) showMapsSettings;
 
-@end
+- (IBAction)	startFinding;
+- (void)		stopFinding;
 
+- (void) showFinding;
+- (void) hideFinding;
+
+@end

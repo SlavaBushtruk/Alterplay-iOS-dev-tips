@@ -26,21 +26,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B78077D10E424A50035C16B /* MapView.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B8C974590E8A19B2007D16AD /* libMapView.a */;
+			remoteGlobalIDString = B8C974590E8A19B2007D16AD;
 			remoteInfo = MapView;
 		};
 		6B78078610E424A50035C16B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B78077D10E424A50035C16B /* MapView.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE /* RM Unit Tests.app */;
+			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
 			remoteInfo = "Unit Tests";
 		};
 		6B78079610E425D30035C16B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6B78077D10E424A50035C16B /* MapView.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = B8C974130E8A19B2007D16AD /* MapView */;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
 			remoteInfo = MapView;
 		};
 /* End PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		1D6058910D05DD3D006BFB54 /* RouteMeSourceSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteMeSourceSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* RouteMeSourceSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteMeSourceSelectionViewController.xib; sourceTree = "<group>"; };
+		2899E5210DE3E06400AC0155 /* RouteMeSourceSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RouteMeSourceSelectionViewController.xib; path = ../RouteMeSourceSelectionViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* RouteMeSourceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteMeSourceSelectionViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* RouteMeSourceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteMeSourceSelectionViewController.m; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 				1D3623250D0F684500981E51 /* RouteMeSourceSelectionAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* RouteMeSourceSelectionViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* RouteMeSourceSelectionViewController.m */,
+				2899E5210DE3E06400AC0155 /* RouteMeSourceSelectionViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -127,7 +128,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2899E5210DE3E06400AC0155 /* RouteMeSourceSelectionViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* RouteMeSourceSelection-Info.plist */,
 			);

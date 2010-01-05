@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6B9E85D610BAC29100F58EDF</string>
+										<string>6BC164F410BAD8EF009672C6</string>
 										<key>history</key>
 										<array>
 											<string>6BD965C210B36F8000017773</string>
@@ -346,7 +346,7 @@
 											<string>6B81975510BA0EE900D215E3</string>
 											<string>6B81975610BA0EE900D215E3</string>
 											<string>6B81975710BA0EE900D215E3</string>
-											<string>6B9E857C10BABDCE00F58EDF</string>
+											<string>6B9E85D610BAC29100F58EDF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -420,9 +420,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6B9E856910BAABA400F58EDF</string>
+				<string>6BC164E810BAC9BA009672C6</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6B9E856A10BAABA400F58EDF</string>
+				<string>6BC164E910BAC9BA009672C6</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -559,7 +559,7 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>6BD965D310B36F8000017773</string>
-		<string>/Users/slatvick/Desktop/MacOsLikeMenuAnnimation/MacOsLikeMenuAnnimation.xcodeproj</string>
+		<string>/Users/slatvick/Documents/Documents/DEVELOPMENT/iDev/Alterplay-iPhone-dev-tips/MacOsLikeMenuAnnimation/MacOsLikeMenuAnnimation.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>70 114 1099 860 0 0 1680 1028 </string>
@@ -639,7 +639,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6BD965D310B36F8000017773</string>
-				<string>6B9E856B10BAABA400F58EDF</string>
+				<string>6BC164EA10BAC9BA009672C6</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -681,8 +681,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 201}}</string>
-											<string>{{316, 0}, {378, 201}}</string>
+											<string>{{0, 0}, {316, 202}}</string>
+											<string>{{316, 0}, {378, 202}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -697,8 +697,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 201}}</string>
-											<string>{{0, 201}, {694, 180}}</string>
+											<string>{{0, 0}, {694, 202}}</string>
+											<string>{{0, 202}, {694, 179}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -731,7 +731,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 201}}</string>
+									<string>{{316, 0}, {378, 202}}</string>
 									<key>RubberWindowFrame</key>
 									<string>191 489 694 422 0 0 1680 1028 </string>
 								</dict>
@@ -759,13 +759,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>6B9E856C10BAABA400F58EDF</string>
+				<string>6BC164EB10BAC9BA009672C6</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>6B9E856D10BAABA400F58EDF</string>
-				<string>6B9E856E10BAABA400F58EDF</string>
-				<string>6B9E856F10BAABA400F58EDF</string>
-				<string>6B9E857010BAABA400F58EDF</string>
-				<string>6B9E857110BAABA400F58EDF</string>
+				<string>6BC164EC10BAC9BA009672C6</string>
+				<string>6BC164ED10BAC9BA009672C6</string>
+				<string>6BC164EE10BAC9BA009672C6</string>
+				<string>6BC164EF10BAC9BA009672C6</string>
+				<string>6BC164F010BAC9BA009672C6</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -927,7 +927,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>6B9E857210BAABA400F58EDF</string>
+				<string>6BC164F110BAC9BA009672C6</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

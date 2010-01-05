@@ -52,7 +52,7 @@ int mapSourceNumber = 0;
 			break;
 	}
 	
-	// this traick refreshs maps with new source
+	// this trick refreshs maps with new source
 	[mapView moveBy:CGSizeMake(640,960)]; 
 	[mapView moveBy:CGSizeMake(-640,-960)];
 	
@@ -73,14 +73,20 @@ int mapSourceNumber = 0;
 	[self setMapSourceWithNumber:number];
 	[mapSourcePicker selectRow:mapSourceNumber inComponent:0 animated:NO];
 }
-
+/*
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
+{
+    // Return YES for supported orientations
+    return YES;
+}
+*/
 - (void)dealloc {
     [super dealloc];
 }
 
 - (IBAction) showMapsSettings
 {
-	BOOL toShow = [mapSourcePicker isHidden];
+	BOOL toShow = mapSourcePicker.isHidden;
 	
 	if (toShow)
 	{
@@ -92,8 +98,9 @@ int mapSourceNumber = 0;
 		[self setMapSourceWithNumber:[mapSourcePicker selectedRowInComponent:0]];
 	}
 	
-	[mapSourcePicker setHidden:![mapSourcePicker isHidden]];
-	[mapView setUserInteractionEnabled:[mapSourcePicker isHidden]];
+	[findmeBarButton setEnabled:!findmeBarButton.enabled];
+	[mapSourcePicker setHidden:!mapSourcePicker.isHidden];
+	[mapView setUserInteractionEnabled:mapSourcePicker.isHidden];
 }
 
 ///
@@ -132,5 +139,87 @@ numberOfRowsInComponent:(NSInteger)component
 	return 1;
 }
 
+///
+/// FIND ME
+///
+
+- (IBAction) startFinding
+{
+	if (findmeBarButton.style == UIBarButtonItemStyleBordered)
+	{	
+		if (!locationManager)
+		{
+			locationManager = [[CLLocationManager alloc] init];
+			locationManager.delegate = self;
+			locationManager.distanceFilter = 10; // 1000 = kilometer
+			locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+		}
+		
+		[self showFinding];
+		[locationManager startUpdatingLocation];
+		NSLog (@"Locating started");
+	}
+	else
+		[self stopFinding];
+}
+
+- (void) stopFinding
+{
+	[locationManager stopUpdatingLocation];
+	[self hideFinding];
+	NSLog (@"Locating stopped");
+}
+
+- (void)showFinding
+{
+	[findmeBarButton setTitle:@"Finding..."];
+	[findmeBarButton setStyle: UIBarButtonItemStyleDone];
+	[mapSettingsBarButton setEnabled:NO];
+}
+
+- (void)hideFinding
+{
+	[findmeBarButton setTitle:@"Find Me"];
+	[findmeBarButton setStyle: UIBarButtonItemStyleBordered];
+	[mapSettingsBarButton setEnabled:YES];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+	[mapView.contents moveToLatLong:newLocation.coordinate];
+	
+	if([newLocation horizontalAccuracy] > 1000)
+	{
+		if([newLocation horizontalAccuracy] > 10000)
+			[mapView.contents setZoom:6];
+		else if([newLocation horizontalAccuracy] <= 10000 && [newLocation horizontalAccuracy] > 5000)
+			[mapView.contents setZoom:9];
+		if([newLocation horizontalAccuracy] <= 5000 && [newLocation horizontalAccuracy] > 1000)
+			[mapView.contents setZoom:12];
+		
+		[self showFinding];
+	}
+	else if([newLocation horizontalAccuracy] <= 1000 && [newLocation horizontalAccuracy] >= 0)
+	{
+		[mapView.contents setZoom:16];
+		[self stopFinding];
+	}
+}
+
+- (void)locationManager:(CLLocationManager *)manager 
+	   didFailWithError:(NSError *)error
+{
+	[self stopFinding];
+	UIAlertView *errorAlert = [[UIAlertView alloc]
+							   initWithTitle: @"Location not found"
+							   message:nil
+							   delegate:nil
+							   cancelButtonTitle:@"OK"
+							   otherButtonTitles:nil];
+	[errorAlert show];
+	[errorAlert release];
+}
 
 @end

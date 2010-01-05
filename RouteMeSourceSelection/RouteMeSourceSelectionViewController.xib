@@ -33,7 +33,7 @@
 			</object>
 			<object class="IBUIView" id="696854287">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
+				<int key="NSvFlags">256</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIView" id="604062614">
@@ -53,7 +53,7 @@
 					</object>
 					<object class="IBUIPickerView" id="850031594">
 						<reference key="NSNextResponder" ref="696854287"/>
-						<int key="NSvFlags">-2147483356</int>
+						<int key="NSvFlags">-2147483380</int>
 						<string key="NSFrame">{{0, 200}, {320, 216}}</string>
 						<reference key="NSSuperview" ref="696854287"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -70,6 +70,11 @@
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<object class="NSMutableArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIBarButtonItem" id="637189619">
+								<string key="IBUITitle">Find me</string>
+								<int key="IBUIStyle">1</int>
+								<reference key="IBUIToolbar" ref="656327719"/>
+							</object>
 							<object class="IBUIBarButtonItem" id="502179629">
 								<reference key="IBUIToolbar" ref="656327719"/>
 								<int key="IBUISystemItemIdentifier">5</int>
@@ -90,6 +95,7 @@
 					<reference key="NSCustomColorSpace" ref="529747486"/>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -151,6 +157,22 @@
 					</object>
 					<int key="connectionID">34</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">startFinding</string>
+						<reference key="source" ref="637189619"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">37</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">findmeBarButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="637189619"/>
+					</object>
+					<int key="connectionID">38</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -200,6 +222,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="850137738"/>
 							<reference ref="502179629"/>
+							<reference ref="637189619"/>
 						</object>
 						<reference key="parent" ref="696854287"/>
 					</object>
@@ -218,6 +241,11 @@
 						<reference key="object" ref="502179629"/>
 						<reference key="parent" ref="656327719"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">36</int>
+						<reference key="object" ref="637189619"/>
+						<reference key="parent" ref="656327719"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -232,6 +260,7 @@
 					<string>28.IBPluginDependency</string>
 					<string>30.IBPluginDependency</string>
 					<string>35.IBPluginDependency</string>
+					<string>36.IBPluginDependency</string>
 					<string>8.IBEditorWindowLastContentRect</string>
 					<string>8.IBPluginDependency</string>
 				</object>
@@ -245,7 +274,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{654, 288}, {320, 460}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{654, 268}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -269,7 +299,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">35</int>
+			<int key="maxID">38</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -278,19 +308,30 @@
 					<string key="className">RouteMeSourceSelectionViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showMapsSettings</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSMutableArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>showMapsSettings</string>
+							<string>startFinding</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>findmeBarButton</string>
 							<string>mapSettingsBarButton</string>
 							<string>mapSourcePicker</string>
 							<string>mapView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UIBarButtonItem</string>
 							<string>UIBarButtonItem</string>
 							<string>UIPickerView</string>
 							<string>RMMapView</string>

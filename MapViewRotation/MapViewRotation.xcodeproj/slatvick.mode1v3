@@ -330,30 +330,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6B42025310B364E5005746EE</string>
+										<string>6BD9660E10B3766800017773</string>
 										<key>history</key>
 										<array>
 											<string>6B5065E110B0DC7B00EA516E</string>
 											<string>6B42024710B35ED1005746EE</string>
-											<string>6B42024810B35ED1005746EE</string>
+											<string>6B42025310B364E5005746EE</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>6B5065E410B0DC7B00EA516E</string>
 											<string>6B5065E510B0DC7B00EA516E</string>
 											<string>6B50663710B0E2CD00EA516E</string>
-											<string>6B42023410B35C56005746EE</string>
-											<string>6B42023510B35C56005746EE</string>
-											<string>6B42024110B35D8D005746EE</string>
-											<string>6B42024210B35D8D005746EE</string>
-											<string>6B42024310B35D8D005746EE</string>
-											<string>6B42024410B35D8D005746EE</string>
-											<string>6B42024910B35ED1005746EE</string>
-											<string>6B42024A10B35ED1005746EE</string>
-											<string>6B42024B10B35ED1005746EE</string>
-											<string>6B42024C10B35ED1005746EE</string>
-											<string>6B42024D10B35ED1005746EE</string>
-											<string>6B42024E10B35ED1005746EE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -411,9 +399,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6B4201F010B33CB4005746EE</string>
+				<string>6BD9660F10B3766800017773</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6B4201F110B33CB4005746EE</string>
+				<string>6BD9661010B3766800017773</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -547,12 +535,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6B42021810B35B9C005746EE</string>
-		<string>6B42021910B35B9C005746EE</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>6B5065E710B0DC7B00EA516E</string>
-		<string>/Users/slatvick/Desktop/MapViewRotation/MapViewRotation.xcodeproj</string>
+		<string>/Users/slatvick/Documents/Documents/DEVELOPMENT/iDev/Alterplay-iPhone-dev-tips/MapViewRotation/MapViewRotation.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>97 132 1098 815 0 0 1680 1028 </string>
